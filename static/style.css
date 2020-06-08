@@ -1,0 +1,8 @@
+body {
+  background:url('https://cdn.pixabay.com/photo/2016/03/09/10/37/light-bulb-1246043_1280.jpg') no-repeat !important;
+  background-size:cover;
+}
+
+.navbar {
+  background: transparent !important;
+}

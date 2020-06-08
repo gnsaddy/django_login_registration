@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Navigation-with-Button.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block title %} {% endblock %}
+</head>
+<body>
+<div></div>
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+    <div class="container"><a class="navbar-brand text-white font-weight-bolder" href="{% url 'index' %}">Branding</a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="navcol-1">
+            {% if user.is_authenticated %}
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" role="presentation"><a class="text-white font-weight-bolder" href="{% url 'calc' %}">Calculator</a>
+                    </li>
+                </ul>
+                <span class="navbar-text actions">
+                <a class="login" class="text-white font-weight-bolder" href="#">Hello, {{ user.first_name }}</a>
+                <a class="btn action-button text-white font-weight-bolder " role="button" href="{% url 'logout' %}">Logout</a>
+            </span>
+            {% else %}
+                <ul class="nav navbar-nav mr-auto">
+                </ul>
+                <span class="navbar-text actions">
+                <a class="login text-white font-weight-bolder" href="{% url 'login' %}">Log In</a>
+                <a class="btn action-button text-white font-weight-bolder " role="button" href="{% url 'register' %}">Sign Up</a>
+            </span>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+<hr>
+
+<div class="container-fluid">
+    {% block content %}{% endblock %}
+</div>
+
+
+<script src="{% static 'bootstrap/js/jquery-min.js' %}"></script>
+<script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/tooltip.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% extends 'header.html' %}
+{% block title %} <title>Basic Calculator</title> {% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-4 col-lg-4 mx-auto">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <p class="font-weight-bolder text-dark">Simple Calculator</p>
+                    </div>
+                    <div class="card-body">
+                        <form action="calc" class="mx-auto" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="num1" class="requiredField">
+                                    First Number
+                                </label>
+                                <input type="text" name="num1" maxlength="10" class="form-control rounded-pill" id="num1"
+                                       required autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label for="num2" class="requiredField">
+                                    Second Number
+                                </label>
+                                <input type="text" name="num2" maxlength="10" class="form-control rounded-pill" id="num2" required>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="submit" class="btn btn-primary text-dark font-weight-bolder rounded-pill"
+                                       name="plus" value=" + ">&nbsp;
+                                <input type="submit" class="btn btn-primary text-dark font-weight-bolder rounded-pill"
+                                       name="minus" value=" - ">&nbsp;
+                                <input type="submit" class="btn btn-primary text-dark font-weight-bolder rounded-pill"
+                                       name="mult" value=" * ">&nbsp;
+                                <input type="submit" class="btn btn-primary text-dark font-weight-bolder rounded-pill"
+                                       name="divide" value=" / ">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center font-weight-bolder">
+                        Result : {{ result }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
