@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb14034b-8292-48a6-8748-098c2511c594" name="Default Changelist" comment="" />
+    <list default="true" id="cb14034b-8292-48a6-8748-098c2511c594" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +28,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -89,7 +90,13 @@
       <updated>1591523015008</updated>
       <workItem from="1591523018010" duration="751000" />
       <workItem from="1591593046107" duration="2361000" />
-      <workItem from="1591596943011" duration="17561000" />
+      <workItem from="1591596943011" duration="18162000" />
+      <workItem from="1591672656686" duration="218000" />
+      <workItem from="1591674088794" duration="313000" />
+      <workItem from="1591674602869" duration="674000" />
+      <workItem from="1591676551389" duration="14000" />
+      <workItem from="1591676840753" duration="460000" />
+      <workItem from="1591677344829" duration="123000" />
     </task>
     <servers />
   </component>
@@ -97,6 +104,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="2" key="#Plugins" timestamp="1591677356568">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="2" key="#Plugins/0.0.1280.720@0.0.1280.720" timestamp="1591677356568" />
+    <state x="321" y="97" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591674250177">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="321" y="97" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720@0.0.1280.720" timestamp="1591674250177" />
     <state width="1237" height="132" key="GridCell.Tab.0.bottom" timestamp="1591598972384">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -113,9 +128,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="132" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1591598972384" />
-    <state x="142" y="3" key="SettingsEditor" timestamp="1591596906111">
+    <state x="142" y="3" key="SettingsEditor" timestamp="1591677306669">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="142" y="3" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1591596906111" />
+    <state x="142" y="3" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1591677306669" />
   </component>
 </project>
