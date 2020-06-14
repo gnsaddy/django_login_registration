@@ -22,11 +22,15 @@
              id="navcol-1">
             {% if user.is_authenticated %}
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"><a class="text-white font-weight-bolder" href="{% url 'calc' %}">Calculator</a>
+                    <li class="nav-item" role="presentation"><a class="text-white"
+                                                                href="{% url 'calc' %}">Calculator  </a>
+                    </li>&nbsp;&nbsp;
+                    <li class="nav-item" role="presentation"><a class="text-white"
+                                                                href="{% url 'contact' %}"> Contact US</a>
                     </li>
                 </ul>
                 <span class="navbar-text actions">
-                <a class="login" class="text-white font-weight-bolder" href="#">Hello, {{ user.first_name }}</a>
+                <a class="login" class="text-white font-weight-bolder" href="#" style="color: white;!important;">Hello, {{ user.first_name }}</a>
                 <a class="btn action-button text-white font-weight-bolder " role="button" href="{% url 'logout' %}">Logout</a>
             </span>
             {% else %}

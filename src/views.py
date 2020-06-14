@@ -1,6 +1,9 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+from django.core.mail import send_mail, get_connection
+from .forms import Contactus
 
 
 # Create your views here.
@@ -39,7 +42,8 @@ def login(request):
             auth.login(request, user)
             return redirect('/')
         else:
-            messages.warning(request, 'Please enter a correct username and password. Note that both fields may be case-sensitive.')
+            messages.warning(request,
+                             'Please enter a correct username and password. Note that both fields may be case-sensitive.')
             return redirect('login')
     else:
         return render(request, 'login.html')
@@ -48,7 +52,6 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
-
 
 
 def register(request):
@@ -85,3 +88,27 @@ def register(request):
 
     else:
         return render(request, 'registration.html')
+
+
+def contact(request):
+    submitted = False
+    if request.method == 'POST':
+        form = Contactus(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            con = get_connection('django.core.mail.backends.console.EmailBackend')
+            send_mail(
+                cd['subject'],
+                cd['msg'],
+                cd.get('email', ''),
+                ['gnsaddy@outlook.com'],
+                fail_silently=False,
+                connection=con
+            )
+            messages.success(request, 'Your message was submitted successfully. Thank you.')
+        return redirect('/contact?submitted=True')
+    else:
+        form = Contactus()
+        if 'submitted' in request.GET:
+            submitted = True
+        return render(request, 'contact.html', {'form': form})
