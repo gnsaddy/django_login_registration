@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb14034b-8292-48a6-8748-098c2511c594" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/django_login_registration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_login_registration.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +104,8 @@
       <workItem from="1591691725031" duration="2326000" />
       <workItem from="1592065191118" duration="2838000" />
       <workItem from="1592097354554" duration="4373000" />
+      <workItem from="1592645070966" duration="2810000" />
+      <workItem from="1592667243155" duration="5397000" />
     </task>
     <servers />
   </component>
